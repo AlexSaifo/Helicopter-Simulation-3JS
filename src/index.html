@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helicopter</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #startScreen {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      position: fixed;
+      overflow: hidden;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+
+
+    #startButton {
+      width: 300px;
+      padding: 20px 40px;
+      font-size: 24px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #exitButton {
+      width: 300px;
+      padding: 20px 40px;
+      font-size: 24px;
+      background-color: #e82323;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #continueButton {
+      width: 300px;
+      padding: 20px 40px;
+      font-size: 24px;
+      background-color: #2341e8;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: none;
+    }
+
+    .infoDev {
+      background-color: #080b2c;
+      padding: 5px;
+      position: absolute;
+      top: 10%;
+      left: 20;
+    }
+
+    .infoText {
+      font-family: 'Roboto', sans-serif;
+      color: #08f1f3;
+    }
+
+    canvas {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #08f1f3;
+      margin: 3px 0;
+      width: 5;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="startScreen">
+    <button id="continueButton">Continue</button>
+    <button id="startButton">Start New Game</button>
+    <button id="exitButton">Exit</button>
+  </div>
+  <!-- <canvas class="webgl"></canvas> -->
+
+  <div id="container">
+    <!-- <div id="info">Description</div> -->
+  </div>
+</body>
+
+</html>
